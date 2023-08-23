@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+body{
+    background-color: #1a161c;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0;
+    width: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+nav{
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    background-color: black;
+    color: azure;
+}
+
+nav ul li{
+    padding: 0px 12px;
+
+}
+
+.brand img{
+    width: 45px;
+    height: 45px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    margin: 20px auto;
+    display: flex;
+    min-height: 63vh; /*75% of height */
+    background-color: black;
+    color: azure;
+    font-family: 'Varela', sans-serif;
+    width: 70%;
+    border-radius: 10px;
+    padding: 34px;
+    background-image: url(images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 697px 400px;
+    background-position: 50%;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: azure;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItemContainer{
+    margin-top: 30px;
+}
+
+.songItem img{
+    width: 50px;
+    height: auto;
+    border-radius: 34px;
+    margin: 0 15px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    height: 60px;
+    color: azure;
+    background-color: black;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    margin-top: 10px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    cursor: pointer;
+    width:80vw;
+    /* text-align: center;not working since it's not a container*/ 
+}
+
+.songInfo{
+    font-family: 'Varela', sans-serif;
+    position: absolute;
+    left: 5vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
